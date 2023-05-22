@@ -1,0 +1,18 @@
+html
+    head 
+        title Supermercado
+    body    
+        h1 Supermercado
+        a(href ='/products') listagem de Produto 
+        br
+        a(href='distributors') Listagem de Distribuidoras
+        
+        h2 Produtos
+            ul 
+            each product in productsList
+                li= product.name
+        br
+        h2 Distribuidoras
+            ul 
+            each distributor in distributorList
+                li= distributor.name

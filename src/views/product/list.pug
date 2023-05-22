@@ -1,0 +1,14 @@
+html
+    head 
+        title Listagem de Produtos 
+    body    
+        h1 Listagem de Produtos 
+        a(href='products/form') Formulario de Produtos
+        br
+        a(href='distributors') Listagem de Distribuidoras
+        br
+        a(href='/supermercado') Supermercado
+        
+        ul 
+         each product in productsList
+            li= product.name

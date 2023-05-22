@@ -1,0 +1,12 @@
+html 
+    head 
+        title Formulario de Produtos 
+    body 
+        h1 Formulario de Produtos 
+        a(href = '/products') listagem de Produto 
+        br
+        a(href='distributors') Listagem de Distribuidoras
+        form(action = '/products/create', method="post")
+            label Nome do Produto:  
+                input(name = 'name', requerid, type='text')
+            button(type="submit") Salvar

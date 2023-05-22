@@ -1,0 +1,14 @@
+html
+    head 
+        title Listagem de Distribuidoras 
+    body    
+        h1 Listagem de Distribuidoras 
+        a(href = '/distributors/form') Formulario de Distribuidoras
+        br
+        a(href = '/products') listagem de Produto 
+        br
+        a(href = '/supermercado') Supermercado
+        br
+        ul 
+         each distributor in distributorList
+            li= distributor.name

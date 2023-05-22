@@ -1,0 +1,12 @@
+html 
+    head 
+        title Formulario de Distribuidoras 
+    body 
+        h1 Formulario de Distribuidoras 
+        a(href='distributors') Listagem de Distribuidoras
+        br
+        a(href = '/products') listagem de Produto 
+        form(action = '/distributors/create', method="post")
+            label Nome da Distribuidora:  
+                input(name = 'name', requerid, type='text')
+            button(type="submit") Salvar
